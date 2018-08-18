@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainGameActivity"
+    tools:showIn="@layout/activity_main_game"
+    android:id="@+id/layout">
+
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="@string/_0"
+        android:id="@+id/textView_points"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:textColor="#ffffff"
+        android:typeface="monospace"
+        android:gravity="center"
+        android:background="@drawable/levelboard"
+        android:layout_above="@+id/imageView_emo"
+        android:layout_alignLeft="@+id/text_number2"
+        android:layout_alignStart="@+id/text_number2"
+        android:layout_marginBottom="50dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="@string/_99"
+        android:id="@+id/textView_timer"
+        android:textSize="25sp"
+        android:typeface="monospace"
+        android:textStyle="bold|italic"
+        android:background="@drawable/levelboard"
+        android:gravity="center"
+        android:layout_above="@+id/imageView_emo"
+        android:layout_alignLeft="@+id/text_number1"
+        android:layout_alignStart="@+id/text_number1"
+        android:layout_marginBottom="50dp"
+        android:textColor="#ffffff"
+        android:autoText="false" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageView_emo"
+        android:contentDescription="@string/playing_well"
+        android:src="@drawable/yes"
+        android:layout_above="@+id/textView_plus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/num1"
+        android:id="@+id/text_number1"
+        android:textSize="30sp"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/textView_plus"
+        android:layout_toLeftOf="@+id/button2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plus"
+        android:id="@+id/textView_plus"
+        android:textSize="30sp"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/num2"
+        android:id="@+id/text_number2"
+        android:textSize="30sp"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/textView_plus"
+        android:layout_toRightOf="@+id/button2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_comments"
+        android:text="@string/good_luck"
+        android:layout_below="@+id/text_number1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sum1"
+        android:id="@+id/button1"
+        android:textSize="20sp"
+        android:onClick="button1Clicked"
+        android:background="#009688"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/button2"
+        android:layout_toLeftOf="@+id/button2"
+        android:clickable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sum2"
+        android:id="@+id/button2"
+        android:textSize="20sp"
+        android:onClick="button2Clicked"
+        android:background="#009688"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView_plus"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:clickable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sum3"
+        android:id="@+id/button3"
+        android:textSize="20sp"
+        android:onClick="button3Clicked"
+        android:background="#009688"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/button2"
+        android:layout_toRightOf="@+id/button2"
+        android:clickable="true" />
+
+</RelativeLayout>

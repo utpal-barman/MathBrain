@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".GameOverActivity"
+    android:background="#f9891c">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/_0_points"
+        android:id="@+id/textView_gamePoints"
+        android:textSize="40dp"
+        android:typeface="serif"
+        android:textColor="#fcebeb"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView_gameOver"
+        android:src="@drawable/gameover"
+        android:layout_above="@+id/textView_gamePoints"
+        android:contentDescription="@string/game_is_over" />
+
+    <ImageButton
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageButton_play_again"
+        android:background="@drawable/playagain"
+        android:onClick="click_playAgain"
+        android:contentDescription="@string/play_again"
+        android:layout_below="@+id/textView_gamePoints"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageButton_home"
+        android:layout_below="@+id/imageButton_play_again"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/home"
+        android:layout_marginTop="10dp"
+        android:onClick="click_home"
+        android:contentDescription="@string/home" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/highest_score_0"
+        android:id="@+id/textView_highScore"
+        android:layout_above="@+id/imageView_gameOver"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:textColor="#ffffff"
+        android:textSize="22dp"
+        android:typeface="serif" />
+
+</RelativeLayout>
